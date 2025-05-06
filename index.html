@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRINHO 2025 - Festejando Conexão Campo Cidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos personalizados podem ser adicionados aqui */
+        .cabecalho {
+            background-color: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cabecalho h1 {
+            color: #28a745; /* Cor primária do Bootstrap (verde) */
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-link:hover {
+            opacity: 0.8;
+        }
+
+        .img-agro {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .img-card {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .img-slide {
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #343a40; /* Cor escura para o rodapé */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .secao-destaque {
+            background-color: #e9ecef;
+            padding: 3rem 0;
+        }
+
+        .beneficio-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .beneficio-item i {
+            font-size: 2rem;
+            color: #28a745;
+            margin-bottom: 1rem;
+        }
+
+        .galeria-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <h1>AGRINHO 2025</h1>
+            <h3>Festejando a Conexão Campo Cidade</h3>
+            <p class="lead">Um evento dedicado a celebrar e fortalecer os laços entre o ambiente rural e o urbano.</p>
+            <a href="#inscricoes" class="btn btn-success btn-lg mt-3">Inscreva-se Já!</a>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="energia.html">Energia Rural</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agua.html">Acessibilidade à Água</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producao.html">Produção e Industrialização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#palestrantes">Palestrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="secao-destaque py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>A Importância da Conexão Campo-Cidade</h2>
+                    <p class="lead">Descubra como a integração entre o campo e a cidade é vital para o desenvolvimento sustentável, a economia e a qualidade de vida de todos.</p>
+                    <p>Muitas vezes, a distância física e a falta de informação criam barreiras entre a produção rural e o consumo urbano. O Agrinho 2025 busca quebrar essas barreiras, promovendo o diálogo, o conhecimento e a valorização mútua.</p>
+                    <a href="#areas" class="btn btn-outline-success mt-3">Saiba Mais Sobre as Áreas</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="." alt="Conexão Campo Cidade" style="max-width: 80%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-5" id="areas">
+        <h2 class="text-center mb-4">Explore Nossas Áreas Temáticas</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/image/agua_card.jpg" class="img-card card-img-top" alt="Acessibilidade à Água">
+                    <div class="card-body">
+                        <h5 class="card-title">Acessibilidade à Água</h5>
+                        <p class="card-text">Discutiremos os desafios e as soluções para garantir o acesso à água potável e para irrigação no meio rural.</p>
+                        <a href="agua.html" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/image/energia_card.jpg" class="img-card card-img-top" alt="Energia Rural">
+                    <div class="card-body">
+                        <h5 class="card-title">Energia Rural</h5>
+                        <p class="card-text">Exploraremos as fontes de energia renovável e as tecnologias para impulsionar o desenvolvimento energético no campo.</p>
+                        <a href="energia.html" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/image/producao_card.jpg" class="img-card card-img-top" alt="Produção e Industrialização">
+                    <div class="card-body">
+                        <h5 class="card-title">Produção e Industrialização</h5>
+                        <p class="card-text">Abordaremos as inovações na produção agrícola e pecuária, além das oportunidades de industrialização no setor.</p>
+                        <a href="producao.html" class="btn btn-success">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Momentos do Agrinho</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/image/agro.png" class="img-slide d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/image/energia sus (1).png" class="img-slide d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="/assets/image/energia sus.png" class="img-slide d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="py-5 bg-light" id="palestrantes">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Palestrantes</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Palestrante 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Palestrante 1</h5>
+                            <p class="card-text">Breve descrição sobre a área de atuação e experiência do palestrante.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Palestrante 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Palestrante 2</h5>
+                            <p class="card-text">Breve descrição sobre a área de atuação e experiência do palestrante.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Palestrante 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Nome do Palestrante 3</h5>
+                            <p class="card-text">Breve descrição sobre a área de atuação e experiência do palestrante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white" id="inscricoes">
+        <div class="container">
+            <h2 class="text-center mb-4">Faça Sua Inscrição</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="instituicao" class="form-label">Instituição/Empresa (Opcional)</label>
+                            <input type="text" class="form-control" id="instituicao" placeholder="Sua instituição ou empresa">
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg">Inscrever-se</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="contato">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <p class="text-center">Tem alguma dúvida ou sugestão? Entre em contato conosco!</p>
+                    <ul class="list-unstyled text-center">
+                        <li><i class="bi bi-geo-alt-fill text-success me-2"></i> Curitiba, Paraná, Brasil</li>
+                        <li><i class="bi bi-envelope-fill text-success me-2"></i> contato@agrinho2025.com</li>
+                        <li><i class="bi bi-phone-fill text-success me-2"></i> (XX) XXXXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Agrinho. Todos os direitos reservados. Desenvolvido por [Seu Nome/Organização].</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</body>
+
+</html>
