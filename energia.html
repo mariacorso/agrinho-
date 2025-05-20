@@ -1,11 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AGRINHO 2025 - Energia Rural</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="energia.css">
 </head>
+
 <body>
-    energia
+    <header class="cabecalho text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Energia Rural</h1>
+            <p class="lead">Inovação e Sustentabilidade no Campo</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="energia.html">Energia Rural</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agua.html">Acessibilidade à Água</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="producao.html">Produção e Industrialização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#palestrantes">Palestrantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mb-3">O Potencial da Energia no Campo</h2>
+                        <p class="lead">A energia é a força motriz do desenvolvimento rural, impulsionando a produtividade e a qualidade de vida. Exploramos as soluções mais inovadoras para um futuro energético sustentável.</p>
+                        <p>Desde a iluminação de propriedades remotas até a automação de processos agrícolas, a **acessibilidade e a eficiência energética** são cruciais. O Agrinho 2025 destaca como as **energias renováveis** estão transformando o cenário rural, promovendo a autossuficiência e a redução de custos.</p>
+                        <a href="#beneficios" class="btn btn-success mt-3">Descubra os Benefícios</a>
+                    </div>
+                    <div class="col-md-6 text-center mt-4 mt-md-0">
+                        <img src="./assets/image/energia_rural_principal.jpg" class="img-fluid rounded shadow-lg" alt="Energia Rural Principal">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos-energia" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Tipos de Energia Renovável no Campo</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/energia_solar.jpg" class="card-img-top img-energy" alt="Energia Solar">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Energia Solar Fotovoltaica</h5>
+                                <p class="card-text">Aproveitamento da luz do sol para gerar eletricidade, ideal para bombeamento de água, iluminação e alimentação de equipamentos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/bioenergia.jpg" class="card-img-top img-energy" alt="Bioenergia">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Bioenergia e Biogás</h5>
+                                <p class="card-text">Geração de energia a partir de resíduos orgânicos agrícolas e animais, transformando passivos em fontes de energia limpa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/energia_eolica_rural.jpg" class="card-img-top img-energy" alt="Energia Eólica">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Energia Eólica de Pequeno Porte</h5>
+                                <p class="card-text">Utilização da força dos ventos para a produção de energia, com turbinas compactas adequadas para propriedades rurais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/hidreletrica_pequena.jpg" class="card-img-top img-energy" alt="Pequenas Centrais Hidrelétricas">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Pequenas Centrais Hidrelétricas (PCHs)</h5>
+                                <p class="card-text">Aproveitamento de pequenos cursos d'água para geração de eletricidade em comunidades rurais e fazendas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/eficiencia_energetica.jpg" class="card-img-top img-energy" alt="Eficiência Energética">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Eficiência Energética</h5>
+                                <p class="card-text">Estratégias e tecnologias para otimizar o consumo de energia, reduzindo desperdícios e custos operacionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="./assets/image/armazenamento_energia.jpg" class="card-img-top img-energy" alt="Armazenamento de Energia">
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Sistemas de Armazenamento</h5>
+                                <p class="card-text">Baterias e outras soluções para armazenar o excesso de energia gerada, garantindo autonomia e estabilidade no fornecimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-5 bg-success text-white">
+            <div class="container">
+                <h2 class="text-center mb-5">Benefícios da Energia Sustentável para o Rural</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-currency-dollar display-4 mb-3"></i>
+                            <h4>Redução de Custos</h4>
+                            <p>Diminua significativamente as despesas com eletricidade e combustíveis.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-leaf display-4 mb-3"></i>
+                            <h4>Sustentabilidade Ambiental</h4>
+                            <p>Contribua para um planeta mais verde, reduzindo a pegada de carbono.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-power display-4 mb-3"></i>
+                            <h4>Autonomia Energética</h4>
+                            <p>Garanta um fornecimento contínuo de energia, mesmo em locais remotos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-speedometer2 display-4 mb-3"></i>
+                            <h4>Aumento da Produtividade</h4>
+                            <p>Automatize tarefas e melhore a eficiência das operações agrícolas e pecuárias.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-house-door display-4 mb-3"></i>
+                            <h4>Melhora da Qualidade de Vida</h4>
+                            <p>Acesso a energia para iluminação, refrigeração e equipamentos domésticos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <div class="p-4 rounded bg-dark-opacity-75">
+                            <i class="bi bi-graph-up display-4 mb-3"></i>
+                            <h4>Valorização da Propriedade</h4>
+                            <p>Investir em energias renováveis agrega valor e modernidade ao seu imóvel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="casos-sucesso" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Casos de Sucesso e Projetos Inovadores</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/image/projeto_solar_fazenda.jpg" class="card-img-top img-project" alt="Projeto Solar em Fazenda">
+                            <div class="card-body">
+                                <h5 class="card-title">Fazenda Auto-Suficiente com Energia Solar</h5>
+                                <p class="card-text">Um projeto que transformou uma fazenda de gado em um exemplo de sustentabilidade, utilizando painéis solares para toda a demanda energética, incluindo bombeamento de água e ordenha automatizada.</p>
+                                <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./assets/image/biogas_comunidade.jpg" class="card-img-top img-project" alt="Biogás em Comunidade Rural">
+                            <div class="card-body">
+                                <h5 class="card-title">Comunidade Rural Aquecida por Biogás</h5>
+                                <p class="card-text">Conheça a história de uma comunidade que transformou os dejetos animais em fonte de gás para aquecimento e cozimento, melhorando a saúde e o meio ambiente local.</p>
+                                <a href="#" class="btn btn-outline-success">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos-ferramentas" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Recursos e Ferramentas para Energia Rural</h2>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="d-flex align-items-center p-3 rounded shadow-sm bg-light">
+                            <i class="bi bi-book-fill text-success fs-2 me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Guia Completo de Instalação Solar</h5>
+                                <small class="text-muted">Download de material educativo sobre sistemas fotovoltaicos.</small>
+                            </div>
+                            <a href="#" class="btn btn-success ms-auto">Baixar</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center p-3 rounded shadow-sm bg-light">
+                            <i class="bi bi-calculator-fill text-success fs-2 me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Calculadora de Economia Energética</h5>
+                                <small class="text-muted">Estime o potencial de economia ao migrar para energias renováveis.</small>
+                            </div>
+                            <a href="#" class="btn btn-success ms-auto">Calcular</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center p-3 rounded shadow-sm bg-light">
+                            <i class="bi bi-play-circle-fill text-success fs-2 me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Webinars e Workshops Gratuitos</h5>
+                                <small class="text-muted">Participe de sessões online com especialistas do setor.</small>
+                            </div>
+                            <a href="#" class="btn btn-success ms-auto">Inscrever-se</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex align-items-center p-3 rounded shadow-sm bg-light">
+                            <i class="bi bi-person-fill-gear text-success fs-2 me-3"></i>
+                            <div>
+                                <h5 class="mb-0">Consultoria Gratuita para Projetos</h5>
+                                <small class="text-muted">Agende um atendimento com nossos consultores especializados.</small>
+                            </div>
+                            <a href="#" class="btn btn-success ms-auto">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Agrinho. Todos os direitos reservados. Energia Rural.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

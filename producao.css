@@ -1,0 +1,150 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa; /* Fundo mais claro */
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background: linear-gradient(rgba(40, 167, 69, 0.8), rgba(25, 135, 84, 0.8)), url('./assets/image/cabecalho_producao.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 5rem 0; /* Mais espaçamento */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px; /* Altura mínima para o cabeçalho */
+}
+
+.cabecalho h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cabecalho .lead {
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #d1e7dd !important; /* Um tom mais claro de verde/branco */
+    transform: translateY(-2px);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Seções de Conteúdo */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    color: #28a745; /* Cor primária do Bootstrap (verde) */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Imagens */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-theme, .img-lecture {
+    height: 200px; /* Altura fixa para as imagens dos cards */
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.25rem; /* Bootstrap card border-radius */
+    border-top-right-radius: 0.25rem;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+/* Benefícios */
+.bg-dark-opacity-75 {
+    background-color: rgba(0, 0, 0, 0.3); /* Um tom mais sutil para o fundo dos benefícios */
+    border-radius: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.bg-dark-opacity-75:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Mais escuro no hover */
+}
+
+.bg-dark-opacity-75 i {
+    color: #fff; /* Ícones brancos */
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.bg-dark-opacity-75 h4 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.bg-dark-opacity-75 p {
+    color: #e9ecef; /* Texto mais claro */
+}
+
+/* Rodapé */
+.footer {
+    background-color: #212529; /* Tom escuro para o rodapé */
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    .cabecalho .lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cabecalho {
+        padding: 3rem 0;
+    }
+
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}
