@@ -1,60 +1,81 @@
 body {
-    padding: 0;
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8f9fa; /* Um tom de cinza claro para o fundo */
-    color: #333; /* Cor de texto padrão */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-brand {
-    font-weight: bold;
-}
-
-.nav-link {
-    color: white !important;
-}
-
-.nav-link:hover {
-    opacity: 0.8;
-}
-
-.bg-light {
-    background-color: #e9ecef !important; /* Um tom de cinza mais claro para seções */
-}
-
-.footer {
-    background-color: #343a40; /* Cor escura para o rodapé */
-    color: white;
+.cabecalho {
+    background-color: #fff;
+    padding: 4rem 0;
+    color: #28a745 !important;
     text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-h1, h2, h3 {
-    color: #28a745; /* Cor primária do Bootstrap (verde) para títulos */
+.cabecalho h1 {
+    color: #28a745 !important;
+    font-weight: 700;
 }
 
-.lead {
-    color: #6c757d; /* Um tom de cinza para o texto de destaque */
+.cabecalho h3 {
+    color: #6c757d;
+    font-weight: 300;
     font-style: italic;
 }
 
-.card-title {
+h2,
+h3 {
+    font-weight: 600;
+}
+
+.accordion-button {
+    background-color: #e9f7ef;
     color: #28a745;
+    font-weight: 600;
 }
 
-.card-img-top {
-    max-height: 200px;
-    object-fit: cover;
+.accordion-button:not(.collapsed) {
+    background-color: #28a745;
+    color: #fff;
 }
 
-/* Estilos adicionais para melhorar a aparência */
-.shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+.accordion-body p {
+    font-size: 1rem;
+    color: #343a40;
 }
 
-.rounded-sm {
-    border-radius: 0.2rem!important;
+footer.footer {
+    background-color: #343a40;
+    color: white;
 }
+
+.img-fluid.rounded.shadow {
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.4);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.img-fluid.rounded.shadow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(40, 167, 69, 0.7);
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(40, 167, 69, 0.3);
+}
+
